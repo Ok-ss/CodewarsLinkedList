@@ -3,17 +3,12 @@ class Node(object):
         self.data = data
         self.next = next_node
     
-    def __repr__(self) -> str:
-        return f'{self.data} -> {self.next}'
     
 class Context(object):
     def __init__(self, first, second):
         self.first = first
         self.second = second
-    
-    def __repr__(self) -> str:
-        return f'{self.first}; {self.second}'
-    
+
 def alternating_split(head:Node):
     if head and head.next:
         node = head
@@ -43,11 +38,3 @@ def alternating_split(head:Node):
 
 
     raise Exception
-
-F = Node('F', None)
-E = Node('E', F)
-D = Node('D', E)
-C = Node('C', D)
-B = Node('B', C)
-A = Node('A', B)
-print(alternating_split(A))
