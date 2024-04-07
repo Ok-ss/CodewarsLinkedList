@@ -1,13 +1,9 @@
-'''MODULE TO PARSE A LINKED LIST FROM A STRING'''
-
+'''MODULE TO PARSE A LINKED LIST FROM A STRING''' 
 class Node:
     '''class to store info about nods'''
     def __init__(self, data, next_node=None):
         self.data = data
-        self.next = next_node
-
-    def __str__(self) -> str:
-        return f'{self.data} -> {self.next}'
+        self.next = next_node 
 
 def linked_list_from_string(s):
     '''parse a linked list from string'''
