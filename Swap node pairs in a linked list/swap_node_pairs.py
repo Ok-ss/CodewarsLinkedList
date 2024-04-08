@@ -1,8 +1,11 @@
+'''SWAP PAIRS IN A LIST'''
 class Node:
-    def __init__(self, next=None):
-        self.next = next
-    
+    '''class to store info about nods'''
+    def __init__(self, nxt=None):
+        self.next = nxt
+
 def swap_pairs(head:Node):
+    '''swap each pair in the linked list'''
     node = head
     prev = None
     while node and node.next:
@@ -16,5 +19,5 @@ def swap_pairs(head:Node):
             head = nxt_node
         prev = node
         node = rest
-        
+
     return head

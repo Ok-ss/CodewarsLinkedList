@@ -3,7 +3,7 @@ class Node:
     '''class to store info about nods'''
     def __init__(self, data, next_node=None):
         self.data = data
-        self.next = next_node 
+        self.next = next_node
 
 def linked_list_from_string(s):
     '''parse a linked list from string'''

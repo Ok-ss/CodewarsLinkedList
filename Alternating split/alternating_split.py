@@ -1,15 +1,18 @@
+'''ALTERNATING SPLIT'''
 class Node(object):
+    '''class to store info about nods'''
     def __init__(self, data=None, next_node=None):
         self.data = data
         self.next = next_node
-    
-    
+
 class Context(object):
+    '''class to store info about 2 linked list'''
     def __init__(self, first, second):
         self.first = first
         self.second = second
 
 def alternating_split(head:Node):
+    '''splits a linked list into 2 alternatively'''
     if head and head.next:
         node = head
         def append(head, new_node):

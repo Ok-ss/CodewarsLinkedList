@@ -1,10 +1,12 @@
+'''GET LOOP LENTH'''
 class Node:
     '''class to store info about nods'''
     def __init__(self, data):
         self.data = data
-        self.next = None 
+        self.next = None
 
 def loop_size(node):
+    '''get the size of the loop'''
     if node.next:
         node_1 = node
         node_2 = node

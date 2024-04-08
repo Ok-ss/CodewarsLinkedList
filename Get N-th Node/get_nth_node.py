@@ -1,10 +1,12 @@
+'''GET N-TH NODE'''
 class Node:
     '''class to store info about nods'''
     def __init__(self, data, next_node=None):
         self.data = data
-        self.next = next_node 
+        self.next = next_node
 
 def get_nth(node, index):
+    '''get Nth node of a linked list'''
     i = 0
     if not node:
         raise Exception

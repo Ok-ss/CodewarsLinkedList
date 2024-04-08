@@ -1,9 +1,12 @@
-class Node(object):
+'''SORTED INSERT'''
+class Node:
+    '''class to store info about nods'''
     def __init__(self, data):
         self.data = data
         self.next = None
 
 def sorted_insert(head:Node, data):
+    '''insert into a sorted list'''
     if head:
         to_insert = Node(data)
         if head.data > data:
